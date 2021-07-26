@@ -1,49 +1,115 @@
 $border2: 2px solid white;
 
-.nav {
-  border: 1px solid black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1300px;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
+.nav-bar {
+  width: 100%;
   position: fixed;
+  // top: 10px;
   top: 0;
   z-index: 10;
-  color: $Neutral-light;
-  padding: 1rem;
-  h1 {
-    cursor: pointer;
-  }
-  span {
-    display: none;
-  }
-  .nav-items {
-    display: none;
-  }
+  margin: 0 auto;
+  height: 80px;
+  background: transparent;
+  transition: background 300ms ease-in-out;
 
-
-
-  
-  @media (min-width: 768px) {
+  .nav {
+    // border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 100%;
+    color: $Neutral-light;
+    h1 {
+      cursor: pointer;
+    }
     span {
-      display: initial;
+      display: none;
     }
     .nav-items {
+      display: none;
+    }
+    .nav-menu {
+      height: 50px;
+      width: 50px;
       display: flex;
-      border: $border2;
-      width: 350px;
-      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      cursor: pointer;
+      .menu-button {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 40px;
+        background: $Neutral-light;
+        &::after,
+        &::before {
+          content: "";
+          width: 40px;
+          height: 2px;
+          position: absolute;
+          background: $Neutral-light;
+        }
+        &::after {
+          transform: translateY(10px);
+        }
+        &::before {
+          transform: translateY(-10px);
+        }
+      }
+    }
 
-      p {
-        align-self: center;
-        cursor: pointer;
-        margin: 0;
+
+
+
+    @media (min-width: 768px) {
+      span {
+        display: initial;
+      }
+      .nav-menu {
+        display: none;
+      }
+      .nav-items {
+        display: flex;
+        // border: $border2;
+        width: 350px;
+        justify-content: space-between;
+
+        p {
+          align-self: center;
+          cursor: pointer;
+          margin: 0;
+        }
       }
     }
   }
 }
 
+.nav-bar.active {
+  // top: 0;
+  background: $Background;
+  transition: background 300ms ease-in-out;
+  .nav {
+    color: $Neutral-dark;
+    .nav-menu {
+      .menu-button {
+        background: $Neutral-dark;
+        &::after,
+        &::before {
+          background: $Neutral-dark;
+        }
+      }
+    }
+  }
 
+
+  @media (min-width: 768px) {
+    .nav-bar.active {
+      .nav-menu {
+        display: none;
+      }
+    }
+  }
+}

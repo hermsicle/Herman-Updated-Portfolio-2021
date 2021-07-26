@@ -31,7 +31,12 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-    background: rgba(0,0,0, 0.4);
+    background: rgba(0,100,150, 0.4);
+  }
+
+
+  @media (min-width: 768px) {
+    height: 980px;
   }
   
 }
