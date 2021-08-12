@@ -1,6 +1,11 @@
-import { NavBar, MyAvatar } from './components'
-import { LandingContainer, ServicesContainer, ProjectsContainer, ContactContainer } from './containers'
-import './App.scss'
+import { NavBar, MyAvatar } from "./components";
+import {
+  LandingContainer,
+  ServicesContainer,
+  ProjectsContainer,
+  ContactContainer,
+} from "./containers";
+import "./App.scss";
 
 function App() {
   return (
@@ -11,7 +16,7 @@ function App() {
       <ServicesContainer />
       <ProjectsContainer />
       <ContactContainer />
-    </div>    
+    </div>
   );
 }
 
