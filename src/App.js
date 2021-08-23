@@ -1,9 +1,10 @@
-import { NavBar, MyAvatar } from "./components";
+import { NavBar } from "./components";
 import {
   LandingContainer,
   ServicesContainer,
   ProjectsContainer,
   ContactContainer,
+  AboutContainer,
 } from "./containers";
 import "./App.scss";
 
@@ -11,8 +12,8 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      {/* <MyAvatar/> */}
       <LandingContainer />
+      <AboutContainer />
       <ServicesContainer />
       <ProjectsContainer />
       <ContactContainer />

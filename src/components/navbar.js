@@ -5,11 +5,9 @@ import SideNav from "./sideNav";
 const links = ["about", "services", "projects", "contact", "resume"];
 
 function NavBar() {
-  const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
   const [navBar, setNavBar] = useState(false);
   const [border, setBorder] = useState(false);
-  const [sideNav, setSideNav] = useState(false);
 
   const showButon = () => {
     if (window.innerWidth <= 768) {
@@ -45,10 +43,8 @@ function NavBar() {
     <div className={navBar ? "nav-bar active" : "nav-bar"}>
       <div className="nav container">
         <h1>
-          {" "}
           <Link to="home">
-            {" "}
-            Herman <span>Liu</span>{" "}
+            Herman <span>Liu</span>
           </Link>
         </h1>
         <SideNav />
