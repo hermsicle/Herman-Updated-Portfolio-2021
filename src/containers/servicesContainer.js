@@ -7,7 +7,7 @@ const ServicesContainer = () => {
       <h1> Services </h1>
       <div className="services-container">
         {data.map((item, i) => (
-          <div key={item.id} className="service-box">
+          <div key={item.id} className="service-box box">
             <img src={item.icon} alt="img" className="icon" />
             <h3> {item.service} </h3>
             <p> {item.description} </p>

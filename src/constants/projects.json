@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "title": "Netflix Clone",
+    "summary": "デザインとは「魔法の杖」の様なものだと考えています。サービスやプロダクトが問題を解決するための魔法だとするならば、それを使用者",
+    "image": "/assets/images/folder.svg"
+  },
+  {
+    "id": "2",
+    "title": "PokeStore",
+    "summary": "デザインとは「魔法の杖」の様なものだと考えています。サービスやプロダクトが問題を解決するための魔法だとするならば、それを使用者",
+    "image": "/assets/images/folder.svg"
+  },
+  {
+    "id": "3",
+    "title": "H&L Auto Body",
+    "summary": "デザインとは「魔法の杖」の様なものだと考えています。サービスやプロダクトが問題を解決するための魔法だとするならば、それを使用者",
+    "image": "/assets/images/folder.svg"
+  },
+  {
+    "id": "4",
+    "title": "URL Shortly",
+    "summary": "デザインとは「魔法の杖」の様なものだと考えています。サービスやプロダクトが問題を解決するための魔法だとするならば、それを使用者",
+    "image": "/assets/images/folder.svg"
+  },
+  {
+    "id": "5",
+    "title": "Country Search",
+    "summary": "デザインとは「魔法の杖」の様なものだと考えています。サービスやプロダクトが問題を解決するための魔法だとするならば、それを使用者",
+    "image": "/assets/images/folder.svg"
+  },
+  {
+    "id": "6",
+    "title": "Manage",
+    "summary": "デザインとは「魔法の杖」の様なものだと考えています。サービスやプロダクトが問題を解決するための魔法だとするならば、それを使用者",
+    "image": "/assets/images/folder.svg"
+  }
+]
