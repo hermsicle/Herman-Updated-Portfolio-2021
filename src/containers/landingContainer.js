@@ -1,5 +1,6 @@
 import React from "react";
 import { MyAvatar } from "../components";
+import { Link } from "react-scroll";
 
 const LandingContainer = () => {
   return (
@@ -12,7 +13,9 @@ const LandingContainer = () => {
           I am <span>Herman Liu</span>, a full stack web developer focused on
           creating awesome web apps!
         </h3>
-        <button> Learn More </button>
+        <button>
+          <Link to="about">Learn More</Link>
+        </button>
       </div>
     </div>
   );

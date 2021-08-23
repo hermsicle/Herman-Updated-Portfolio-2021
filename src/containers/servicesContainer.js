@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
 
 const ServicesContainer = () => {
   return (
     <div className="container section" id="services">
-      <h1> Services Container </h1>
-    </div>
-  )
-}
+      <h1> Services </h1>
+      {/* Front End */}
 
-export default ServicesContainer
+      {/* Back End */}
+
+      {/* DataBase */}
+    </div>
+  );
+};
+
+export default ServicesContainer;

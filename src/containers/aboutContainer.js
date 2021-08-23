@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 const AboutContainer = () => {
   return (
     <div className="about container section" id="about">
-      {/* <h1>Who Am I?</h1> */}
+      <h1>My Story</h1>
       <div className="about-inner-container">
         <div className="summary">
           <p>

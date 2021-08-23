@@ -20,6 +20,8 @@ $border2: 2px solid white;
     margin: 0 auto;
     height: 100%;
     color: $Neutral-light;
+    padding: 0px 1rem;
+
     h1 {
       cursor: pointer;
       font-weight: 200;
@@ -116,6 +118,8 @@ $border2: 2px solid white;
   // background: $Background;
   background: white;
   transition: background 300ms ease-in-out;
+  box-shadow: 1px 1px 8px $Neutral-dark;
+
   .nav {
     color: $Neutral-dark;
     .nav-menu {

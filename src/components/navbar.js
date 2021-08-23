@@ -41,7 +41,7 @@ function NavBar() {
 
   return (
     <div className={navBar ? "nav-bar active" : "nav-bar"}>
-      <div className="nav container">
+      <div className="nav">
         <h1>
           <Link to="home">
             Herman <span>Liu</span>
