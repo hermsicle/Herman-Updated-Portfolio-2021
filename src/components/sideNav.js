@@ -14,14 +14,36 @@ import ContactMailIcon from "@material-ui/icons/ContactMail";
 import DescriptionIcon from "@material-ui/icons/Description";
 import CloseRoundedIcon from "@material-ui/icons/CloseRounded";
 import { Link } from "react-scroll";
-const links = ["about", "services", "projects", "contact", "resume", "cancel"];
+
+const links = [
+  { title: "about" },
+  { title: "services" },
+  { title: "projects" },
+  { title: "contact" },
+  {
+    title: "resume",
+    onClick: function () {
+      window.open(
+        "https://drive.google.com/file/d/1PIEC690iyPK4hPu85c4eDSsPWvFzH4c-/view?usp=sharing",
+        "_blank"
+      );
+    },
+  },
+  { title: "cancel" },
+];
 
 const useStyles = makeStyles({
   list: {
-    width: 300,
+    width: "100vw",
   },
   fullList: {
     width: "auto",
+    height: "100%",
+    display: "flex",
+    alignItems: "center",
+  },
+  listItem: {
+    fontSize: "25px",
   },
 });
 function SideNav() {
@@ -54,19 +76,19 @@ function SideNav() {
       <List>
         {links.map((text, index) => (
           <>
-            <ListItem button key={text}>
-              <ListItemIcon>
-                {index === 0 && <PersonIcon />}
-                {index === 1 && <ComputerIcon />}
-                {index === 2 && <BuildIcon />}
-                {index === 3 && <ContactMailIcon />}
-                {index === 4 && <DescriptionIcon />}
-                {index === 5 && <CloseRoundedIcon />}
-              </ListItemIcon>
-              <Link to={text}>
-                <ListItemText primary={text} />
-              </Link>
-            </ListItem>
+            <Link to={text.title} onClick={toggleDrawer(anchor, false)}>
+              <ListItem button key={text.title}>
+                <ListItemIcon>
+                  {index === 0 && <PersonIcon />}
+                  {index === 1 && <ComputerIcon />}
+                  {index === 2 && <BuildIcon />}
+                  {index === 3 && <ContactMailIcon />}
+                  {index === 4 && <DescriptionIcon />}
+                  {index === 5 && <CloseRoundedIcon />}
+                </ListItemIcon>
+                <ListItemText primary={text.title} />
+              </ListItem>
+            </Link>
             <Divider />
           </>
         ))}

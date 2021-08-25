@@ -2,7 +2,21 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import SideNav from "./sideNav";
 
-const links = ["about", "services", "projects", "contact", "resume"];
+const links = [
+  { title: "about" },
+  { title: "services" },
+  { title: "projects" },
+  { title: "contact" },
+  {
+    title: "resume",
+    onClick: function () {
+      window.open(
+        "https://drive.google.com/file/d/1PIEC690iyPK4hPu85c4eDSsPWvFzH4c-/view?usp=sharing",
+        "_blank"
+      );
+    },
+  },
+];
 
 function NavBar() {
   const [button, setButton] = useState(true);
@@ -51,7 +65,9 @@ function NavBar() {
         <div className="nav-items">
           {links.map((link) => (
             <p>
-              <Link to={link}> {link} </Link>
+              <Link to={link.title} onClick={link.onClick}>
+                {link.title}
+              </Link>
             </p>
           ))}
         </div>
