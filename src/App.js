@@ -5,6 +5,8 @@ import {
   ProjectsContainer,
   ContactContainer,
   AboutContainer,
+  QuoteContainer,
+  FooterContainer,
 } from "./containers";
 import "./App.scss";
 
@@ -16,7 +18,9 @@ function App() {
       <AboutContainer />
       <ServicesContainer />
       <ProjectsContainer />
+      <QuoteContainer />
       <ContactContainer />
+      <FooterContainer />
     </div>
   );
 }
