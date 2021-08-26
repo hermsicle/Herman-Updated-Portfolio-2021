@@ -38,11 +38,11 @@ const FooterContainer = () => {
             onClick={scrollToTop}
           />
         </div>
-        <div className="policies-container flex-row">
+        {/* <div className="policies-container flex-row">
           <p>Cookie Policy</p>
           <p>Privacy Policy</p>
           <p>Terms & Conditions</p>
-        </div>
+        </div> */}
         <div className="rights-container flex-row">
           <p>
             <CopyrightIcon className="copyright-icon" />

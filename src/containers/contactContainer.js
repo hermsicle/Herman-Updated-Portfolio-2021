@@ -70,7 +70,7 @@ const ContactContainer = () => {
               name="checkedA"
             />
             <p>
-              I accept the <span> Privacy Policy</span>
+              I accept the <span> terms and conditions </span>
             </p>
           </div>
           <div className="button-container">

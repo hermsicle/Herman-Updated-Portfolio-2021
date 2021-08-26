@@ -11,6 +11,7 @@ const ProjectsContainer = () => {
             <p> {item.title} </p>
             <div className="project-box">
               <img src={item.image} alt="" className="folder" />
+              <img src={item.image2} alt="" className="folder" />
               <p className="summary"> {item.summary} </p>
             </div>
           </div>

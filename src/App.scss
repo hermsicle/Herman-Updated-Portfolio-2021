@@ -40,7 +40,8 @@ body {
 // Laptops: 1200 - 1600px
 
 .landing-section {
-  background: url("https://images.unsplash.com/photo-1482784160316-6eb046863ece?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80");
+  // background: url("https://images.unsplash.com/photo-1482784160316-6eb046863ece?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80");
+  background: url("./../src/assets/fuji_day.svg");
   height: 100vh;
   position: relative;
   display: grid;
@@ -55,7 +56,7 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-    background: rgba(0, 9, 14, 0.4);
+    background: rgba(0, 9, 14, 0.2);
   }
 
   .landing-inner {
@@ -67,7 +68,7 @@ body {
     text-align: center;
     z-index: 5;
     h1 {
-      text-transform: uppercase;
+      // text-transform: uppercase;
       font-weight: 400;
     }
     h3 {
@@ -170,10 +171,18 @@ body {
       box-shadow: 0px 5px 30px -2px rgba(0, 0, 0, 0.11);
       border-radius: 5px;
       transition: all 350ms ease-in;
+
+      background-color: #ffffff;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FFF6FD'/%3E%3Cstop offset='1' stop-color='%2300CFFD'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='17' height='17' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='8.5' cy='8.5' r='8.5'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.14'/%3E%3C/svg%3E");
+      background-attachment: fixed;
+
       &:hover {
-        border: 2px solid $Secondary-second;
-        background: $Neutral-light;
+        // border: 2px solid $Secondary-second;
+        // background: $Neutral-light;
         cursor: pointer;
+        h3 {
+          // color: $Secondary-second;
+        }
       }
       .icon {
         height: 100px;
@@ -181,10 +190,12 @@ body {
         margin-top: 20px;
       }
       h3 {
-        color: $Secondary-second;
+        // color: $Secondary-second;
+        color: $Neutral-dark;
         font-weight: 300;
         margin: 25px auto;
         text-transform: uppercase;
+        transition: all 350ms ease-in;
       }
     }
   }
@@ -220,9 +231,14 @@ body {
         padding: 1rem;
         box-shadow: 0px 5px 30px -2px rgba(0, 0, 0, 0.11);
         transition: all 350ms ease-in;
+
+        background-color: #ffffff;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FFF6FD'/%3E%3Cstop offset='1' stop-color='%2300CFFD'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='17' height='17' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='8.5' cy='8.5' r='8.5'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.14'/%3E%3C/svg%3E");
+        background-attachment: fixed;
+
         &:hover {
-          border: 2px solid $Secondary-second;
-          background: $Neutral-light;
+          // border: 2px solid $Secondary-second;
+          // background: $Neutral-light;
           cursor: pointer;
         }
         .folder {
@@ -246,7 +262,8 @@ body {
 
 // Quote Container
 .quote-container {
-  background: url("https://images.unsplash.com/photo-1514913322314-143ecce67140?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2002&q=80");
+  // background: url("https://images.unsplash.com/photo-1514913322314-143ecce67140?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2002&q=80");
+  background: url("./../src/assets/gate_day.svg");
   height: 250px;
   background-attachment: fixed;
   background-position: center;
@@ -375,7 +392,8 @@ body {
 // Footer
 .footer {
   .footer-top {
-    background: url("https://images.unsplash.com/photo-1498429089284-41f8cf3ffd39?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+    // background: url("https://images.unsplash.com/photo-1498429089284-41f8cf3ffd39?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+    background: url("./../src/assets/fuji.svg");
     background-attachment: fixed;
     background-position: top center;
     background-repeat: no-repeat;
@@ -389,7 +407,7 @@ body {
       height: 100%;
       width: 100%;
       position: absolute;
-      background: rgba(0, 9, 14, 0.623);
+      // background: rgba(0, 9, 14, 0.623);
     }
     .icon-container {
       z-index: 5;
