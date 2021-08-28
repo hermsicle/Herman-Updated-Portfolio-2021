@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
 // Changes Font Size using Clamp
 body {
   font-family: "Roboto", sans-serif;
 }
 
 h1 {
-  font-size: clamp(100%, 1rem + 2vw, 28px);
+  font-size: clamp(100%, 1rem + 2vw, 35px);
 }
 
 h3 {
@@ -16,4 +16,6 @@ h3 {
 p {
   font-size: clamp(100%, 1rem + 2vw, 20px);
   font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 1.4;
 }

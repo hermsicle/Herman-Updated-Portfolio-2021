@@ -8,7 +8,7 @@ const LandingContainer = () => {
       <div className="landing-overlay"></div>
       <div className="landing-inner">
         <MyAvatar
-          style={{ width: "200px", height: "200px" }}
+          style={{ width: "200px", height: "200px", marginBottom: "16px" }}
           avatarStyle="transparent"
           topType="ShortHairShortFlat"
           accessoriesType="Blank"
@@ -21,11 +21,15 @@ const LandingContainer = () => {
           mouthType="Smile"
           skinColor="Pale"
         />
-        <h1> Hello, Welcome! </h1>
-        <h3>
-          I am <span>Herman Liu</span>, a full stack web developer focused on
-          creating awesome web apps!
-        </h3>
+        <div className="flex-row">
+          <h3>
+            Hi, my name is <span> Herman Liu. </span>I build web apps
+          </h3>
+        </div>
+        <p>
+          I'm a web developer based in San Francisco, CA specializing in
+          building awesome websites.
+        </p>
         <button>
           <Link to="about">Learn More</Link>
         </button>

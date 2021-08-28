@@ -1,12 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
-import List from "@material-ui/core/List";
 import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
 import PersonIcon from "@material-ui/icons/Person";
 import ComputerIcon from "@material-ui/icons/Computer";
 import BuildIcon from "@material-ui/icons/Build";
@@ -35,21 +33,28 @@ const links = [
 const useStyles = makeStyles({
   list: {
     width: "100vw",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: "100px",
   },
   fullList: {
-    width: "auto",
+    width: "100%",
     height: "100%",
-    display: "flex",
-    alignItems: "center",
-  },
-  listItem: {
-    fontSize: "25px",
   },
 });
+
 function SideNav() {
   const classes = useStyles();
   const [state, setState] = React.useState({
     right: false,
+  });
+
+  const [pStyles, setpStyles] = useState({
+    fontSize: "50px",
+    textAlign: "center",
+    textTransform: "capitalize",
   });
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -72,11 +77,17 @@ function SideNav() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      {/* <Divider /> */}
-      <List>
-        {links.map((text, index) => (
-          <>
-            <Link to={text.title} onClick={toggleDrawer(anchor, false)}>
+      {links.map((text, index) => (
+        <>
+          <Link to={text.title} onClick={toggleDrawer(anchor, false)}>
+            <div
+              style={{
+                // width: "100vw",
+                dislay: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
               <ListItem button key={text.title}>
                 <ListItemIcon>
                   {index === 0 && <PersonIcon />}
@@ -86,13 +97,16 @@ function SideNav() {
                   {index === 4 && <DescriptionIcon />}
                   {index === 5 && <CloseRoundedIcon />}
                 </ListItemIcon>
-                <ListItemText primary={text.title} />
+                <p className="pStyle" style={pStyles} onClick={text.onClick}>
+                  {" "}
+                  {text.title}{" "}
+                </p>
               </ListItem>
-            </Link>
-            <Divider />
-          </>
-        ))}
-      </List>
+            </div>
+          </Link>
+          <Divider />
+        </>
+      ))}
     </div>
   );
 

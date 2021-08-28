@@ -2,43 +2,37 @@
   {
     "id": "1",
     "title": "Netflix Clone",
-    "summary": "デザインとは「魔法の杖」の様なものだと考えています。サービスやプロダクトが問題を解決するための魔法だとするならば、それを使用者",
-    "image": "/assets/images/web_face.svg",
-    "image2": "/assets/images/code_face.svg"
+    "summary": "Created a cloned version of Netflix. Implemented user authentication with firebase and populated the data needed with FireStore. Has sign in/up feature and browse page.",
+    "image": "/assets/images/globe.svg",
+    "image2": "/assets/images/github-character.svg",
+    "background": "/assets/images/netflix.png",
+    "direction": "row",
+    "tech": "React, Styled-Components",
+    "demo": "https://the-netflix-clone-app.netlify.app/",
+    "git": "https://github.com/Arcane-404/netflix-clone"
   },
   {
     "id": "2",
-    "title": "PokeStore",
-    "summary": "デザインとは「魔法の杖」の様なものだと考えています。サービスやプロダクトが問題を解決するための魔法だとするならば、それを使用者",
-    "image": "/assets/images/web_face.svg",
-    "image2": "/assets/images/code_face.svg"
+    "title": "Poké Store",
+    "summary": "Poké Store, a checkout app that allows you to find the pokemon that is ready to add to favorites, add to cart, and order.",
+    "image": "/assets/images/globe.svg",
+    "image2": "/assets/images/github-character.svg",
+    "background": "/assets/images/pikachu.jpeg",
+    "direction": "row-reverse",
+    "tech": "React, Styled-Components",
+    "demo": "https://the-poke-store.netlify.app/",
+    "git": "https://github.com/Arcane-404/poke-store"
   },
   {
     "id": "3",
     "title": "H&L Auto Body",
-    "summary": "デザインとは「魔法の杖」の様なものだと考えています。サービスやプロダクトが問題を解決するための魔法だとするならば、それを使用者",
-    "image": "/assets/images/web_face.svg",
-    "image2": "/assets/images/code_face.svg"
-  },
-  {
-    "id": "4",
-    "title": "URL Shortly",
-    "summary": "デザインとは「魔法の杖」の様なものだと考えています。サービスやプロダクトが問題を解決するための魔法だとするならば、それを使用者",
-    "image": "/assets/images/web_face.svg",
-    "image2": "/assets/images/code_face.svg"
-  },
-  {
-    "id": "5",
-    "title": "Country Search",
-    "summary": "デザインとは「魔法の杖」の様なものだと考えています。サービスやプロダクトが問題を解決するための魔法だとするならば、それを使用者",
-    "image": "/assets/images/web_face.svg",
-    "image2": "/assets/images/code_face.svg"
-  },
-  {
-    "id": "6",
-    "title": "Manage",
-    "summary": "デザインとは「魔法の杖」の様なものだと考えています。サービスやプロダクトが問題を解決するための魔法だとするならば、それを使用者",
-    "image": "/assets/images/web_face.svg",
-    "image2": "/assets/images/code_face.svg"
+    "summary": "Developed website for independently owned auto body shop from concept to deployment. Responsive, mobile-first approach which increased traffic by 20%.",
+    "image": "/assets/images/globe.svg",
+    "image2": "/assets/images/location2.svg",
+    "background": "/assets/images/pickup_truck.png",
+    "direction": "row",
+    "tech": "React, Styled-Components",
+    "demo": "https://h2lautobody.com/",
+    "location": "https://www.google.com/maps/place/New+H+%26+L+Auto+Body/@37.7903381,-122.2486128,15z/data=!4m2!3m1!1s0x0:0xd9dcfc70e2ad1c38?sa=X&ved=2ahUKEwiDjvu4pc_yAhV5DzQIHbXjAScQ_BJ6BAhMEAU"
   }
 ]

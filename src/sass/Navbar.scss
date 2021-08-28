@@ -19,12 +19,13 @@ $border2: 2px solid white;
     max-width: 1300px;
     margin: 0 auto;
     height: 100%;
-    color: $Neutral-light;
+    // color: $Neutral-light;
+    color: $White;
     padding: 0px 1rem;
 
     h1 {
       cursor: pointer;
-      font-weight: 200;
+      font-weight: 300;
     }
     span {
       display: none;
@@ -85,7 +86,7 @@ $border2: 2px solid white;
           margin: 0px 0px 0px 1rem;
           text-transform: capitalize;
           position: relative;
-          font-weight: 200;
+          font-weight: 300;
           // &:hover {
           //   color: $Neutral-light;
           // }

@@ -40,12 +40,13 @@ body {
 // Laptops: 1200 - 1600px
 
 .landing-section {
-  // background: url("https://images.unsplash.com/photo-1482784160316-6eb046863ece?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80");
-  background: url("./../src/assets/fuji_day.svg");
+  // background: url("./../src/assets/fuji_day.svg");
+  background: url("./../src/assets/City-night.svg");
   height: 100vh;
   position: relative;
   display: grid;
   place-content: center;
+
   // Parallax scrolling Effect:
   background-attachment: fixed;
   background-position: center;
@@ -56,12 +57,13 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-    background: rgba(0, 9, 14, 0.2);
+    background: rgba(0, 5, 8, 0.459);
   }
 
   .landing-inner {
     // border: $border2;
-    color: $Neutral-light;
+    // color: $Neutral-light;
+    color: $White;
     margin: 0 auto;
     width: 90%;
     max-width: 800px;
@@ -69,23 +71,30 @@ body {
     z-index: 5;
     h1 {
       // text-transform: uppercase;
-      font-weight: 400;
+      font-weight: 800;
     }
     h3 {
       font-weight: 300;
-      color: $Secondary;
+      // color: $Secondary;
       span {
-        color: $Neutral-light;
+        font-size: 35px;
+        font-weight: 800;
       }
+    }
+    p {
+      font-weight: 600;
     }
     button {
       text-transform: uppercase;
-      border: none;
+      border: 2px solid $Secondary;
       padding: 5px 15px;
       border-radius: 5px;
-      background-color: #0b5264;
-      color: $Neutral-light;
+      // background-color: #0b5264;
+      background: none;
+      // color: $Neutral-light;
+      color: $White;
       transition: background-color 250ms ease-in-out;
+      font-weight: 600;
 
       &:hover {
         background-color: $Secondary-second;
@@ -95,6 +104,16 @@ body {
 
   @media (min-width: 768px) {
     height: 980px;
+    .flex-row {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      h3,
+      h1 {
+        // margin: 1rem;
+        margin: 0;
+      }
+    }
   }
 }
 
@@ -108,6 +127,8 @@ body {
     .summary {
       text-align: center;
       p {
+        letter-spacing: 1px;
+        line-height: 1.4;
         span {
           color: $Secondary;
           font-weight: 400;
@@ -128,7 +149,7 @@ body {
         width: 100%;
       }
       .image-overlay {
-        background: rgba(0, 166, 255, 0.336);
+        background: rgba(0, 166, 255, 0.158);
         position: absolute;
         height: 100%;
         width: 100%;
@@ -170,18 +191,16 @@ body {
       margin: 1rem;
       box-shadow: 0px 5px 30px -2px rgba(0, 0, 0, 0.11);
       border-radius: 5px;
-      transition: all 350ms ease-in;
-
-      background-color: #ffffff;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FFF6FD'/%3E%3Cstop offset='1' stop-color='%2300CFFD'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='17' height='17' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='8.5' cy='8.5' r='8.5'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.14'/%3E%3C/svg%3E");
-      background-attachment: fixed;
+      transform: scale(1);
+      transition: all 150ms ease-in;
 
       &:hover {
-        // border: 2px solid $Secondary-second;
+        border: 2px solid $Secondary-second;
         // background: $Neutral-light;
-        cursor: pointer;
+        // cursor: pointer;
+        // transform: scale(1.05);
         h3 {
-          // color: $Secondary-second;
+          color: $Secondary-second;
         }
       }
       .icon {
@@ -190,12 +209,15 @@ body {
         margin-top: 20px;
       }
       h3 {
-        // color: $Secondary-second;
-        color: $Neutral-dark;
+        color: $Secondary-second;
         font-weight: 300;
         margin: 25px auto;
         text-transform: uppercase;
         transition: all 350ms ease-in;
+      }
+      p {
+        letter-spacing: 1px;
+        line-height: 1.4;
       }
     }
   }
@@ -203,6 +225,7 @@ body {
   @media (min-width: 1200px) {
     .services-container {
       flex-direction: row;
+      justify-content: space-evenly;
     }
   }
 }
@@ -211,50 +234,122 @@ body {
 .projects {
   padding: 50px 0px;
   .projects-container {
-    // border: $border;
+    // border: 1px solid $Neutral-light;
+    margin: 50px 0px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     .project {
       // border: $border;
       width: 100%;
-      margin: 1rem;
-      p {
+      // margin: 1rem;
+      .title {
         text-transform: uppercase;
+        color: $Secondary-second;
+        font-weight: 400;
       }
       .project-box {
-        height: 300px;
-        border: 2px solid $Neutral-light;
-        border-radius: 5px;
-        width: 100%;
-        padding: 1rem;
-        box-shadow: 0px 5px 30px -2px rgba(0, 0, 0, 0.11);
-        transition: all 350ms ease-in;
+        display: flex;
+        flex-direction: column;
+        .project-left {
+          height: 300px;
+          // border: 2px solid $Neutral-light;
+          // border-radius: 5px;
+          width: 100%;
+          padding: 1rem;
+          box-shadow: 0px 5px 30px -2px rgba(0, 0, 0, 0.11);
+          transition: all 350ms ease-in;
+          position: relative;
 
-        background-color: #ffffff;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23FFF6FD'/%3E%3Cstop offset='1' stop-color='%2300CFFD'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='17' height='17' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='8.5' cy='8.5' r='8.5'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.14'/%3E%3C/svg%3E");
-        background-attachment: fixed;
+          .flex-row {
+            display: flex;
+            justify-content: space-between;
+            p {
+              align-self: center;
+              margin: 0;
+            }
+            .project-links {
+              // border: $border;
+              &:hover {
+                cursor: pointer;
+              }
+              .folder {
+                height: 30px;
+                width: 30px;
+                margin-left: 1rem;
+              }
+            }
+          }
 
-        &:hover {
-          // border: 2px solid $Secondary-second;
-          // background: $Neutral-light;
-          cursor: pointer;
+          .summary {
+            margin-top: 1rem;
+            letter-spacing: 1px;
+            line-height: 1.4;
+          }
+          .technologies {
+            position: absolute;
+            bottom: 0;
+            // border: $border;
+            letter-spacing: 1px;
+            line-height: 1.4;
+          }
         }
-        .folder {
-          height: 50px;
-          width: 50px;
-        }
-        .summary {
-          margin-top: 1rem;
+        .project-right {
+          height: 300px;
+          position: relative;
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+          .overlay {
+            // background: rgba(0, 166, 255, 0.123);
+            background: rgba(0, 0, 0, 0);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            transition: all 250ms ease-in-out;
+            cursor: pointer;
+            &:hover {
+              // background: rgba(0, 0, 0, 0);
+              background: rgba(1, 43, 66, 0.774);
+            }
+            &:hover::before {
+              content: "";
+              background: url("./../src/assets/demo.svg");
+              background-size: contain;
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              margin: 0 auto;
+              height: 50px;
+              width: 50px;
+              // border: 1px solid $White;
+              color: $White;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
         }
       }
     }
   }
-  @media (min-width: 993px) {
+  @media (min-width: 1200px) {
     .projects-container {
       .project {
-        width: 350px;
+        .project-box {
+          flex-direction: row;
+          .project-left,
+          .project-right {
+            width: 50%;
+          }
+        }
+        .project-box.reverse {
+          flex-direction: row-reverse;
+        }
       }
     }
   }
@@ -280,9 +375,17 @@ body {
     background: rgba(0, 52, 80, 0.4);
   }
   h3 {
-    color: $Neutral-light;
+    color: $White;
     text-align: center;
     z-index: 5;
+    font-weight: 300;
+    font-family: "Playball", cursive;
+    span {
+      display: none;
+      @media (min-width: 768px) {
+        display: initial;
+      }
+    }
   }
 }
 
@@ -291,12 +394,14 @@ body {
   padding: 50px 0px;
   text-align: center;
   .contact-form {
+    // border: $border;
     .input {
       border: 1px solid $Neutral-light;
       width: 90%;
       margin: 1rem auto;
       display: flex;
       border-radius: 5px;
+      position: relative;
       img {
         height: 25px;
         width: 25px;
@@ -319,6 +424,18 @@ body {
           font-weight: 300;
         }
       }
+      .error {
+        border: $border;
+        position: absolute;
+        bottom: -28px;
+        left: 0;
+        width: 100%;
+        .error-message {
+          height: 25px;
+          display: flex;
+          align-items: center;
+        }
+      }
     }
     .input.name,
     .input.email {
@@ -332,6 +449,7 @@ body {
       }
     }
     .private-privacy {
+      // border: $border;
       display: flex;
       width: 90%;
       height: 50px;
@@ -369,6 +487,14 @@ body {
         &:hover {
           background: $Secondary-second;
         }
+      }
+    }
+    .success-container {
+      width: 90%;
+      margin: 1rem auto;
+
+      .alert {
+        width: 100%;
       }
     }
   }
@@ -475,13 +601,15 @@ body {
     .social-container {
       justify-content: center;
       .social-icon {
-        height: 30px;
-        width: 30px;
+        height: 35px;
+        width: 35px;
         color: $Neutral-light;
         margin: 1rem;
         transition: all 50ms ease-in;
+        transform: scale(1);
         &:hover {
           color: $Secondary-second;
+          transform: scale(1.1);
         }
       }
     }

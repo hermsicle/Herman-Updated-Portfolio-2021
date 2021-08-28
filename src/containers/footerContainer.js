@@ -52,9 +52,18 @@ const FooterContainer = () => {
         </div>
         <div className="social-container flex-row">
           {/* LinkedIn, YouTube, GitHub */}
-          <LinkedInIcon className="social-icon" />
-          <YouTubeIcon className="social-icon" />
-          <GitHubIcon className="social-icon" />
+          <a hRef="https://www.linkedin.com/in/hermanliu168/" target="_blank">
+            <LinkedInIcon className="social-icon" />
+          </a>
+          <a
+            hRef="https://www.youtube.com/channel/UCFHqm4if2I5yJVFJ6xG6FSA"
+            target="_blank"
+          >
+            <YouTubeIcon className="social-icon" />
+          </a>
+          <a hRef="https://github.com/hermsicle" target="_blank">
+            <GitHubIcon className="social-icon" />
+          </a>
         </div>
       </div>
     </div>

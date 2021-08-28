@@ -2,19 +2,19 @@
   {
     "id": "1",
     "service": "Full Stack Development",
-    "description": "デザインとは「魔法の杖」の様なものだと考えています。サービスやプロダクトが問題を解決するための魔法だとするならば、それを使用者（ユーザー）が使いこなすための媒介となるのがデザインの役目ではないでしょうか。ユーザーにマッチした「魔法の杖」を創造できるように日々努力します。",
+    "description": "Capable of developing full stack applications from the ground up. The stack I currently use for full stack development is MERN (MongoDB, Express.js, ReactJS, Node.js). ",
     "icon": "/assets/images/web-programming.svg"
   },
   {
     "id": "2",
     "service": "Front End Development",
-    "description": "“十分に発達した科学技術は、魔法と見分けがつかない”という言葉があるように、テクノロジーは世界と個人の人生を変える力を持っています。常に最新の技術のキャッチアップを行い、変化に対応できる人間でいたい。イノベーションを普及させるのはエンジニアとともにデザイナーの使命でもあると思っています。",
+    "description": "I love creating front end applications! My main tech stack for developing in the front end is with ReactJS. If you have a design ready and need a developer to build it, I’m your guy!",
     "icon": "/assets/images/science-symbol.svg"
   },
   {
     "id": "3",
-    "service": "Responsive UI Design",
-    "description": "小説・映画・漫画などストーリー性のあるコンテンツが大好きです。ストーリーは人々の注目を集め、物事をわかりやすく、覚えやすくすることができます。あらゆる物語のパターンを研究し、自分のアウトプットにもストーリー性を帯びさせることができれば大きなリターンがあると信じています。",
+    "service": "Responsive UI/UX Design",
+    "description": "Web sites must be highly strategic, detail-oriented, organized and process-focused. This is the combination of what a good UI can do. Let’s work together to build something awesome!",
     "icon": "/assets/images/responsive.svg"
   }
 ]
