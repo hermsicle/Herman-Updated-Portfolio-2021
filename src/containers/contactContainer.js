@@ -39,37 +39,40 @@ const ContactContainer = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    // Checking to see if the name,email, and message is properly inputted
     const nameValidate = validator.isAscii(nameInput);
-    console.log(`Name is ${nameValidate}`);
-    !nameValidate && setNameError(true);
-
     const emailValidate = validator.isEmail(emailInput);
-    console.log(`Email is ${emailValidate}`);
-    !emailValidate && setEmailError(true);
-
     const messageValidate = validator.isAscii(messageInput);
-    console.log(`Message is ${messageValidate}`);
-    !messageValidate && setMessageError(true);
-    // emailjs
-    //   .sendForm(
-    //     "Gmail",
-    //     "template_9nc8wgs",
-    //     e.target,
-    //     "user_FSWwId9w8gNQJml5CKO0B"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
-    setNameInput("");
-    setEmailInput("");
-    setMessageInput("");
-    setSuccess(true);
+
+    if (!nameValidate) {
+      setNameError(true);
+    }
+    if (!emailValidate) {
+      setEmailError(true);
+    }
+    if (!messageValidate) {
+      setMessageError(true);
+    } else if (nameValidate && emailValidate && messageValidate) {
+      setNameInput("");
+      setEmailInput("");
+      setMessageInput("");
+      setSuccess(true);
+      emailjs
+        .sendForm(
+          "Gmail",
+          "template_9nc8wgs",
+          e.target,
+          "user_FSWwId9w8gNQJml5CKO0B"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
   };
 
   useEffect(() => {
@@ -78,11 +81,19 @@ const ContactContainer = () => {
     }, 3500);
   }, [success]);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setNameError(false);
+      setEmailError(false);
+      setMessageError(false);
+    }, 3500);
+  }, [nameError, emailError, messageError]);
+
   return (
     <div className="contact container section" id="contact">
       <h1> Contact </h1>
-      <p>Interested in working together?</p>
-      <p>
+      <p className="contact-title">Interested in working together?</p>
+      <p className="contact-subtitle">
         Please feel free to contact me if you need a developer on your team.
       </p>
       <form className="contact-form" onSubmit={sendEmail}>
@@ -111,6 +122,11 @@ const ContactContainer = () => {
               value={emailInput}
               onChange={(e) => setEmailInput(e.target.value)}
             />
+            {emailError && (
+              <div className="error">
+                <p> Please Fill Out </p>
+              </div>
+            )}
           </div>
         </div>
         <div className="input message">
@@ -121,16 +137,13 @@ const ContactContainer = () => {
             value={messageInput}
             onChange={(e) => setMessageInput(e.target.value)}
           />
+          {messageError && (
+            <div className="error">
+              <p> Please Fill Out </p>
+            </div>
+          )}
         </div>
         <div className="flex-row">
-          <div className="private-privacy">
-            <BlueSwitch
-              checked={toggleState.checkedA}
-              onChange={handleChange}
-              name="checkedA"
-            />
-            <MouseOverPopover />
-          </div>
           <div className="button-container">
             <button className="send-button">
               <img src="./assets/images/send.svg" alt="" />

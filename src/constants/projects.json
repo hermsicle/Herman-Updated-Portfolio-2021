@@ -2,36 +2,36 @@
   {
     "id": "1",
     "title": "Netflix Clone",
-    "summary": "Created a cloned version of Netflix. Implemented user authentication with firebase and populated the data needed with FireStore. Has sign in/up feature and browse page.",
+    "summary": "Collaborated with other developers to create a front-end replication of the Netflix web application. Integrated user authentication feature with Firebase Auth allowing users to register and sign in seamlessly. For the data in the front end, we used TMDB API to get movies and TV shows when the user has successfully signed in. There is even a trailer that plays when a user clicks on a show!",
     "image": "/assets/images/globe.svg",
     "image2": "/assets/images/github-character.svg",
     "background": "/assets/images/netflix.png",
     "direction": "row",
-    "tech": "React, Styled-Components",
+    "tech": "React, React-Router, Styled-Components, Firebase Auth, Storybook",
     "demo": "https://the-netflix-clone-app.netlify.app/",
     "git": "https://github.com/Arcane-404/netflix-clone"
   },
   {
     "id": "2",
     "title": "Poké Store",
-    "summary": "Poké Store, a checkout app that allows you to find the pokemon that is ready to add to favorites, add to cart, and order.",
+    "summary": "This is a multi-page checkout application that was created with the intent to flex the knowledge on how Context API and state management works across different pages. Had the chance to work with other developers on this small project. The user is able to view the available Pokemon cards that are for sale and adding them to their carts. There is even a toggle to favorites feature!",
     "image": "/assets/images/globe.svg",
     "image2": "/assets/images/github-character.svg",
     "background": "/assets/images/pikachu.jpeg",
     "direction": "row-reverse",
-    "tech": "React, Styled-Components",
+    "tech": "React, React-Router, Styled-Components, Context API",
     "demo": "https://the-poke-store.netlify.app/",
     "git": "https://github.com/Arcane-404/poke-store"
   },
   {
     "id": "3",
     "title": "H&L Auto Body",
-    "summary": "Developed website for independently owned auto body shop from concept to deployment. Responsive, mobile-first approach which increased traffic by 20%.",
+    "summary": "This is a webpage for an independently owned auto body repair shop located in Oakland, CA. I had the opportunity to create this from the ground up from start to finish. The intent for this web page is to showcase its online presence and answer any questions a client might have when they get in an auto accident! Integrated Google Maps API to get the location of the shop shown in the footer section. ",
     "image": "/assets/images/globe.svg",
     "image2": "/assets/images/location2.svg",
     "background": "/assets/images/pickup_truck.png",
     "direction": "row",
-    "tech": "React, Styled-Components",
+    "tech": "React, Styled-Components, Google Maps API",
     "demo": "https://h2lautobody.com/",
     "location": "https://www.google.com/maps/place/New+H+%26+L+Auto+Body/@37.7903381,-122.2486128,15z/data=!4m2!3m1!1s0x0:0xd9dcfc70e2ad1c38?sa=X&ved=2ahUKEwiDjvu4pc_yAhV5DzQIHbXjAScQ_BJ6BAhMEAU"
   }

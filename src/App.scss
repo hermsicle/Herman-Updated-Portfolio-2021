@@ -57,7 +57,7 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-    background: rgba(0, 5, 8, 0.459);
+    background: rgba(0, 5, 8, 0.562);
   }
 
   .landing-inner {
@@ -252,11 +252,11 @@ body {
         display: flex;
         flex-direction: column;
         .project-left {
-          height: 300px;
+          // height: 300px;
           // border: 2px solid $Neutral-light;
           // border-radius: 5px;
           width: 100%;
-          padding: 1rem;
+          padding: 2rem;
           box-shadow: 0px 5px 30px -2px rgba(0, 0, 0, 0.11);
           transition: all 350ms ease-in;
           position: relative;
@@ -264,6 +264,9 @@ body {
           .flex-row {
             display: flex;
             justify-content: space-between;
+            & {
+              cursor: pointer;
+            }
             p {
               align-self: center;
               margin: 0;
@@ -285,13 +288,15 @@ body {
             margin-top: 1rem;
             letter-spacing: 1px;
             line-height: 1.4;
+            text-align: center;
           }
           .technologies {
-            position: absolute;
-            bottom: 0;
+            // position: absolute;
+            // bottom: 0;
             // border: $border;
             letter-spacing: 1px;
             line-height: 1.4;
+            font-size: 1rem;
           }
         }
         .project-right {
@@ -345,6 +350,18 @@ body {
           .project-left,
           .project-right {
             width: 50%;
+            height: 400px;
+          }
+          .project-left {
+            padding: 25px 35px;
+
+            .summary {
+              text-align: left;
+            }
+            .technologies {
+              position: absolute;
+              bottom: 20px;
+            }
           }
         }
         .project-box.reverse {
@@ -393,12 +410,18 @@ body {
 .contact {
   padding: 50px 0px;
   text-align: center;
+  .contact-title {
+    font-weight: 400;
+  }
+  .contact-subtitle {
+    font-size: 1rem;
+  }
   .contact-form {
     // border: $border;
     .input {
       border: 1px solid $Neutral-light;
       width: 90%;
-      margin: 1rem auto;
+      margin: 2rem auto;
       display: flex;
       border-radius: 5px;
       position: relative;
@@ -427,13 +450,19 @@ body {
       .error {
         border: $border;
         position: absolute;
-        bottom: -28px;
+        bottom: -20px;
         left: 0;
         width: 100%;
-        .error-message {
-          height: 25px;
-          display: flex;
-          align-items: center;
+        display: flex;
+        align-items: center;
+        background: $Neutral-dark;
+        // justify-content: center;
+        p {
+          font-size: 0.8rem;
+          font-weight: 600;
+          color: $Secondary;
+          margin: 0;
+          padding-left: 1rem;
         }
       }
     }
@@ -502,15 +531,25 @@ body {
     .flex-row {
       display: flex;
       width: 90%;
-      margin: 0 auto;
+      margin: 0px auto;
+      height: 100px;
       .input.name {
         margin-right: 1rem;
       }
-      .private-privacy,
+      // .private-privacy,
       .button-container {
-        width: 50%;
+        width: 100%;
         // border: $border;
+
+        .send-button {
+          height: 50px;
+          width: 100%;
+        }
       }
+    }
+    .message {
+      position: relative;
+      top: -16px;
     }
   }
 }

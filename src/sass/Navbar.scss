@@ -24,6 +24,10 @@ $border2: 2px solid white;
     padding: 0px 1rem;
 
     h1 {
+      img {
+        height: 50px;
+        width: 50px;
+      }
       cursor: pointer;
       font-weight: 300;
     }

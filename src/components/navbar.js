@@ -58,7 +58,8 @@ function NavBar() {
       <div className="nav">
         <h1>
           <Link to="home">
-            Herman <span>Liu</span>
+            <img src="/assets/images/h.svg" alt="" />
+            <span>erman</span>
           </Link>
         </h1>
         <SideNav />

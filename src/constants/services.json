@@ -1,19 +1,19 @@
 [
   {
     "id": "1",
-    "service": "Full Stack Development",
+    "service": "Full Stack",
     "description": "Capable of developing full stack applications from the ground up. The stack I currently use for full stack development is MERN (MongoDB, Express.js, ReactJS, Node.js). ",
     "icon": "/assets/images/web-programming.svg"
   },
   {
     "id": "2",
-    "service": "Front End Development",
+    "service": "Front End",
     "description": "I love creating front end applications! My main tech stack for developing in the front end is with ReactJS. If you have a design ready and need a developer to build it, I’m your guy!",
     "icon": "/assets/images/science-symbol.svg"
   },
   {
     "id": "3",
-    "service": "Responsive UI/UX Design",
+    "service": "Responsive UI Design",
     "description": "Web sites must be highly strategic, detail-oriented, organized and process-focused. This is the combination of what a good UI can do. Let’s work together to build something awesome!",
     "icon": "/assets/images/responsive.svg"
   }
