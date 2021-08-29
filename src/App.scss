@@ -108,10 +108,10 @@ body {
       display: flex;
       align-items: flex-end;
       justify-content: center;
-      h3,
-      h1 {
-        // margin: 1rem;
-        margin: 0;
+      h3 {
+        br {
+          display: none;
+        }
       }
     }
   }
@@ -288,7 +288,7 @@ body {
             margin-top: 1rem;
             letter-spacing: 1px;
             line-height: 1.4;
-            text-align: center;
+            // text-align: center;
           }
           .technologies {
             // position: absolute;

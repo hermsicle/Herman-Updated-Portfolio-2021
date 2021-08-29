@@ -93,9 +93,7 @@ const ContactContainer = () => {
     <div className="contact container section" id="contact">
       <h1> Contact </h1>
       <p className="contact-title">Interested in working together?</p>
-      <p className="contact-subtitle">
-        Please feel free to contact me if you need a developer on your team.
-      </p>
+      <p className="contact-subtitle">Feel free to send me a message </p>
       <form className="contact-form" onSubmit={sendEmail}>
         <div className="flex-row">
           <div className="input name">

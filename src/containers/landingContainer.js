@@ -23,7 +23,10 @@ const LandingContainer = () => {
         />
         <div className="flex-row">
           <h3>
-            Hi, my name is <span> Herman Liu. </span>I build web apps
+            Hi, my name is
+            <br />
+            <span> Herman Liu. </span>
+            <br />I build web apps
           </h3>
         </div>
         <p>

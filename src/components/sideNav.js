@@ -22,7 +22,7 @@ const links = [
     title: "resume",
     onClick: function () {
       window.open(
-        "https://drive.google.com/file/d/1PIEC690iyPK4hPu85c4eDSsPWvFzH4c-/view?usp=sharing",
+        "https://drive.google.com/file/d/1e0byVvKPpPi7AIlJm_BEybHqqzVmMWG6/view?usp=sharing",
         "_blank"
       );
     },
